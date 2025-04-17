@@ -89,21 +89,41 @@ as a professional.</p>
     <section id="portfolio" class="portfolio section">
 
       <div class="container">
+        <!-- Add filter buttons with animations -->
+        <div class="row mb-4" data-aos="fade-up">
+          <div class="col-12 text-center">
+            <div class="filter-buttons">
+              <button class="filter-btn active" data-filter="*">All Projects</button>
+              <button class="filter-btn" data-filter=".filter-app">Applications</button>
+              <button class="filter-btn" data-filter=".filter-product">Products</button>
+              <button class="filter-btn" data-filter=".filter-branding">Analytics</button>
+              <button class="filter-btn" data-filter=".filter-books">NLP</button>
+            </div>
+          </div>
+        </div>
 
         <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-
-          
-
           <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
               <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/crop_sense.jpg" class="img-fluid" alt="">
+                <div class="portfolio-img-container">
+                  <img src="assets/img/portfolio/crop_sense.jpg" class="img-fluid" alt="">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-links">
+                      <a href="assets/img/portfolio/crop_sense.jpg" title="View Image" class="preview-link glightbox"><i class="bi bi-zoom-in"></i></a>
+                      <a href="crop_sense.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                    </div>
+                  </div>
+                </div>
                 <div class="portfolio-info">
                   <h4>CropSense: Agricultural Advisory Service</h4>
                   <p>A small business providing data-driven crop recommendations to farmers for optimizing yield and profitability using environmental factors and historical data.</p>
-                  <!-- <a href="assets/img/portfolio/app-1.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a> -->
-                  <a href="crop_sense.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <div class="portfolio-tags">
+                    <span class="tag">Machine Learning</span>
+                    <span class="tag">Data Analysis</span>
+                    <span class="tag">Agriculture</span>
+                  </div>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
@@ -164,6 +184,17 @@ as a professional.</p>
                   <p>A data analysis project aimed at predicting customer churn for Loblaws Digital and developing strategic recommendations to enhance customer retention.</p>
                   <!-- <a href="assets/img/portfolio/app-2.jpg" title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a> -->
                   <a href="churn_prediction.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/amazon.jpg" class="img-fluid" alt="Amazon Recommendation System">
+                <div class="portfolio-info">
+                  <h4>Amazon Recommendation System</h4>
+                  <p>An in-depth analysis and implementation of recommendation algorithms using Jupyter notebooks, featuring collaborative filtering and content-based approaches for personalized product suggestions.</p>
+                  <a href="recommendation-sys-amazon.html" title="View Jupyter Notebook" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
